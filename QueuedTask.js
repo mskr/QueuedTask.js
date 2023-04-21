@@ -31,6 +31,9 @@ function QueuedTask(name) {
     }
 
     async function atomicFn() {
+      //
+      // This is your code!
+      //
       try {
         var value1 = await new Promise(function(resolve, reject) {
           setTimeout(function() { resolve(1) }, 1000)
